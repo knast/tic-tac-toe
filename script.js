@@ -2,30 +2,42 @@
 
 
 
-const gameBoard = (() => {
-
-    const gmboardContainer = document.querySelector('.container');
-    const playBtn = document.querySelector('.play');
-    playBtn.addEventListener('click', () => {
-    
-        for(let i = 0; i < 9; i++) {
-            const boardBlock = document.createElement('div');
-            boardBlock.classList.add('board-block');
-            gmboardContainer.appendChild(boardBlock);
-        }
-    })
-
-    
-        
-
-
-
-
+const generatePlayers = (name, symbol, turn) => {
+    return {name, symbol, turn};
 }
 
 
 
-)();
+
+const gameBoard = (() => {
+
+    const player1 = generatePlayers('playerOne', 'X', true);
+    const player2 = generatePlayers('playerTwo', 'O', false);
+    
+    const boardBlock = document.querySelectorAll('.board-block');
+    const gameboard = Array.from(boardBlock);
+
+
+    gameboard.forEach((boardblock) => boardblock.addEventListener('click', () => {
+        if(player1.turn) {
+            boardblock.textContent = 'X';
+            player1.turn = false;
+            player2.turn = true;
+        } else if(player2.turn) {
+            boardblock.textContent = 'O';
+            player1.turn = true;
+            player2.turn = false;
+        }
+    }))
+
+
+
+
+})();
+
+
+
+
 
 
 

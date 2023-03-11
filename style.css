@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Chakra+Petch:wght@500&family=Kanit:wght@200&family=Manrope&family=Roboto:wght@300&family=Syncopate:wght@700&family=Tilt+Neon&family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Allerta+Stencil&family=Chakra+Petch:wght@500&family=Kanit:wght@200&family=Manrope&family=Roboto:wght@300&family=Syncopate:wght@700&family=Tilt+Neon&family=Unbounded:wght@600&display=swap');
 
 
 body {
@@ -33,4 +33,11 @@ body {
     background-color:#93c5fd;
     border:1px solid black;
     border-radius:8px;
+    text-align:center;
+    font-size:140px;
+    font-weight:bold;
+    font-family:'Roboto', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
