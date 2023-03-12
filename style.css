@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Allerta+Stencil&family=Chakra+Petch:wght@500&family=Kanit:wght@200&family=Manrope&family=Roboto:wght@300&family=Syncopate:wght@700&family=Tilt+Neon&family=Unbounded:wght@600&display=swap');
 
 
+
+
 body {
     text-align:center;
     background:linear-gradient(45deg, #b92b27, #1565C0);
@@ -11,7 +13,7 @@ body {
 .container {
     width:700px;
     height:700px;
-    margin:100px auto;
+    margin:50px auto;
     display:grid;
     grid-template-rows:repeat(3,1fr);
     grid-template-columns:repeat(3,1fr);
@@ -40,4 +42,10 @@ body {
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.result {
+    font-family:'Kanit', sans-serif;
+    font-size:20px;
+    margin-bottom:0px;
 }
